@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1d222c;
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #000;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 8vh;
+}
+
+.container h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #105981;
+}
+
+.container nav a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 18px;
+    display: inline-block;
+    padding: 8px;
+    transition: .3s ease all;
+    border-bottom: 5px solid transparent;
+}
+
+.container nav a:hover{
+    border-bottom: 5px solid #105981;
+    font-size: 20px;
+}
+
+main .banner {
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0,1)100%), url("../images/code.jpg");
+    background-size: cover;
+    height: 60vh;
+    position: relative;
+}
+
+.banner .container {
+    flex-direction: column;
+    width: 50vw;
+    height: inherit;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 2vw;
+}
+
+.banner .container h3{
+    font-size: 40px;
+}
+
+.banner .container p{
+    margin-top: 2vh;
+    margin-bottom: 7vh;
+    font-size: 21px;
+}
+
+.banner .container button{
+    background-color: rgba(0,0,0,.50);
+    color: #FFF;
+    border: none;
+    padding: 15px 45px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 10px;
+    transition: .3s ease all;
+}
+
+.banner .container button:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+}
+
+.fa-play, .fa-info-circle {
+    margin-right: 15px;
+}
+
+.carousel-videos{
+    margin-top:20px;
+}
+
+.carousel-videos h3{
+    margin-bottom: 10px;
+    margin-left: 8px;
+}
+
+.box-carousel{
+    display: flex;
+    overflow: hidden;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.box-video {
+    width: 100%;
+    height: 100%;
+    display:block;
+}
